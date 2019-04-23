@@ -1,0 +1,220 @@
+/*  css for arabic text*/ 
+
+@import url(https://fonts.googleapis.com/earlyaccess/amiri.css);
+  /* font-family: 'Amiri', serif; */
+  
+  
+
+/* */ 
+
+* {
+    font-family:'Amiri', serif;
+    direction: rtl;
+}
+
+body{
+    margin: 0px;
+    padding:0px;
+    background-color: #22557e;
+}
+
+.cover {
+    height:300px;
+}
+
+.main {
+    width: 50%;
+    margin: auto;
+    background-color:rgba(0,0,0,.2);
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
+}
+
+.main h1{
+     text-align: center;
+    color: #4682B4;
+    -webkit-text-fill-color: transparent;
+   -webkit-text-stroke-width:1px;
+   font-size: 45px;
+
+}
+
+
+.inpt {
+    position: relative;
+    overflow:hidden;
+     direction: rtl;
+}
+
+::placeholder  {
+    text-align:right;
+    font-size: 22px;
+
+}
+
+/*
+
+.inpt input{
+    width: 100%;
+    padding: 10px 0px;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+*/
+
+
+.inpt input {
+    width:100%;
+    padding:15px;
+    margin-top:20px;
+    position: relative;
+    transition:all .3s linear;
+}
+
+.inpt .icon {
+    background-color:#22557e;
+    position: absolute;
+    top:20px;
+    right:-43px;
+    padding:12px;
+    height: 50px;
+    transition:all .3s linear;
+}
+.inpt .icon i {
+   color: #69a7d8;
+   text-align:center;
+}
+
+.inpt input:focus ~ label,
+.inpt input:valid ~ label
+{
+    
+    top: -20px;
+    left: 0;
+    color: orangered;
+    font-size: 18px;
+    
+}
+
+
+
+select
+{
+    width: 100%;
+    padding: 2%;
+    color:black;
+    border-radius: 5px;
+}
+
+.butn
+{
+    color: #2980b9;
+    text-align: center;
+    margin-top: 4%;
+}
+
+button{
+    width: 300px;
+    height: 50px;
+    border: 1px solid  ;
+    font-size : 28px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    
+
+}
+
+span{
+    text-align: right;
+}
+
+img{
+    width: 100%;
+    
+}
+
+
+.selectInput {
+    margin-top:20px;
+}
+
+
+
+/* Media */
+
+@media (max-width:1100px) {
+    .main {
+        width:85%;
+    }
+
+    .cover {
+        height:200px;
+    }
+}
+
+
+@media(max-width:1100px)
+{
+    .inpt input
+    {
+       padding:15px;
+       margin-top:35px;
+    }
+}
+
+@media(max-width:1100px){
+    .main h1{
+        font-size:64px;
+    }
+    
+}
+
+@media (max-width:1100px){
+    .inpt{
+        font-size : 40px;
+        font-weight: bolder;
+    }
+    
+    
+    ::placeholder  {
+    font-size: 48px;
+
+}
+}
+
+@media(max-width:1100px){
+    .inpt .icon {
+    top:35px;
+    right:-59px;
+    padding:17px 12px 17px 12px;
+    height: 54px;
+}
+}
+
+@media(max-width:1100px){
+    .selectInput {
+        margin-top:30px;
+    }
+}
+
+@media(max-width:1100px)
+{
+    button{
+    width: 400px;
+    height: 80px;
+    font-size : 38px;
+
+}
+
+}
+
+/* Media */

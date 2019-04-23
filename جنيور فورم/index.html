@@ -1,0 +1,79 @@
+<!DOCTYBE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Junior Form</title>
+            <link rel="stylesheet" type="text/css" href="css/normalize.css">
+            <link rel="stylesheet" href="css/all-icons.css" >
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+       
+    
+       <!-- <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Changa" rel="stylesheet">-->
+        
+    </head>
+
+    <body>
+        <img class="cover img-responsive" src="images/1.png">
+        <div class="main">
+            <h1>#سابق_سنك</h1>
+            <form onsubmit="return myfun()">
+                <div class="inpt inpt1">
+                    <input id="input1" type="text" name="name" placeholder="اسم الطالب" required>
+                    <span class="icon" > <i class="fas fa-home"></i></span>
+                </div> 
+
+                <div class="inpt inpt2">
+                    <input type="text" name="number" placeholder="رقم الطالب" id="mobnum" value="" >
+                    <span id="message" style="color: red;"></span>
+                    <span class="icon"><i class="fas fa-key"></i></span>
+
+                </div> 
+
+                <div class="inpt inpt3">
+                    <input type="text" name="school" placeholder="اسم المدرسة" required>
+                    <span class="icon"> <i class="fa fa-university" aria-hidden="true"></i> </span>
+                </div> 
+                
+                <div class="inpt inpt4">
+                    <input type="text" name="father" placeholder="اسم ولي الأمر المسئول" required>
+                    <span class="icon"> <i class="fas fa-male"></i> </span>
+                </div> 
+
+                <div class="inpt inpt5">
+                    <input type="text" name="fatherNumber" placeholder=" رقم ولي الأمر" id="mobnum2" value="">
+                    <span id="message2" style="color: red;"></span>
+                    <span class="icon"> <i class="fa fa-mobile" aria-hidden="true"></i>  </span>
+                </div> 
+
+                <div class="inpt inpt6">
+                    <input type="text" name="facebookLink" placeholder="حساب الفيس بوك الخاص" required>
+                    <span class="icon"><i class="far fa-facebook"></i></span>
+                </div> 
+
+                <div class="inpt inpt7">
+                    <input type="text" name="year" placeholder="السنه الدراسيه" required>
+                    <span class="icon"> <i class="fas fa-calendar-alt"></i> </span>
+                </div>
+
+                <div class="inpt selectInput">
+                    <select id="school" name="schoolType" required>
+                        <option value="" disabled selected hidden>عربي ام لغات</option>
+                        <option value="arabic">عربي</option>
+                        <option value="english">لغات</option>
+                    </select>
+                    
+                </div> 
+
+                <div class="butn">
+                <button type="submit" onclick="return validateForm()" >إرسال</button>
+                </div>    
+
+            </form>
+        </div>
+
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
